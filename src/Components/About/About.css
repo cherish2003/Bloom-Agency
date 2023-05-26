@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+.AboutSection {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Sectitle {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.Sec_info {
+  width: 60%;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@media (max-width: 425px) {
+  .AboutSection {
+    height: 800px;
+  }
+  .Sec_info {
+    width: 70%;
+    font-size: 17px;
+  }
+}/*# sourceMappingURL=About.css.map */

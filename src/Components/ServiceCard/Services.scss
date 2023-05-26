@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+
+$black: #000000;
+$white: #fff;
+.dflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.service_container {
+  font-family: "Montserrat", sans-serif;
+
+  // background-color: #000000;
+  width: 70%;
+  margin: 80px auto 0 auto;
+  .title_wrapper {
+    .service_title {
+      display: block;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 45px;
+      font-weight: 700;
+      overflow: hidden;
+      font-family: "Montserrat", sans-serif;
+      // line-height: 1.45;
+      // font-weight: bolder;
+      // font-size: 20px;
+    }
+  }
+  h2 {
+    color: rgba(0, 0, 0, 0.5);
+
+    font-size: 1.9rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 1.5;
+    overflow: hidden;
+  }
+}
+
+.service_card {
+  @extend .dflex;
+  //   background-color: blue;
+  flex-wrap: wrap;
+  grid-gap: 1vw;
+  justify-content: space-between;
+  margin: 60px 0;
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: calc(96% / 4);
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    background-color: $white;
+    padding: 2.8vw 3.4vw;
+    height: 270px;
+    position: relative;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+      cursor: pointer;
+      top: -5px;
+    }
+    &.dark {
+      background-color: $black;
+      color: $white;
+      .line {
+        position: absolute;
+        top: 0;
+        right: 3.8vw;
+        width: 4.5vw;
+      }
+      h2 {
+        color: $white;
+        text-align: left;
+      }
+    }
+    .service_icon {
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $black;
+      color: $white;
+      border-radius: 8px;
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: $black;
+      text-transform: capitalize;
+    }
+  }
+}
+.icon_class {
+  color: red;
+}
+@media (max-width: 768px) {
+  .service_card {
+    justify-content: space-evenly;
+    .card {
+      height: 250px;
+      width: 230px;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .service_title {
+    font-size: 60px;
+  }
+  .service_container {
+    // border: 1px solid red;
+    height: 100%;
+  }
+  .title_wrapper {
+    h2 {
+      font-size: 15px;
+    }
+  }
+  .service_card {
+    // font-size: 60px;
+    justify-content: space-around;
+    // border: 1px solid blue;
+    height: 100%;
+    .card {
+      width: 200px;
+      height: 200px;
+      h3 {
+        font-size: 18px;
+      }
+    }
+  }
+}

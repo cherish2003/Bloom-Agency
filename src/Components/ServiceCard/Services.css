@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+.dflex, .service_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.service_container {
+  font-family: "Montserrat", sans-serif;
+  width: 70%;
+  margin: 80px auto 0 auto;
+}
+.service_container .title_wrapper .service_title {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 45px;
+  font-weight: 700;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+.service_container h2 {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 20px;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.service_card {
+  flex-wrap: wrap;
+  grid-gap: 1vw;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+.service_card .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 24%;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 2.8vw 3.4vw;
+  height: 270px;
+  position: relative;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+.service_card .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  cursor: pointer;
+  top: -5px;
+}
+.service_card .card.dark {
+  background-color: #000000;
+  color: #fff;
+}
+.service_card .card.dark .line {
+  position: absolute;
+  top: 0;
+  right: 3.8vw;
+  width: 4.5vw;
+}
+.service_card .card.dark h2 {
+  color: #fff;
+  text-align: left;
+}
+.service_card .card .service_icon {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #fff;
+  border-radius: 8px;
+}
+.service_card .card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.icon_class {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .service_card {
+    justify-content: space-evenly;
+  }
+  .service_card .card {
+    height: 250px;
+    width: 230px;
+  }
+}
+@media (max-width: 425px) {
+  .service_title {
+    font-size: 60px;
+  }
+  .service_container {
+    height: 100%;
+  }
+  .title_wrapper h2 {
+    font-size: 15px;
+  }
+  .service_card {
+    justify-content: space-around;
+    height: 100%;
+  }
+  .service_card .card {
+    width: 200px;
+    height: 200px;
+  }
+  .service_card .card h3 {
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=Services.css.map */
