@@ -53,19 +53,10 @@ To run the Bloom Agency website locally on your machine, follow these steps:
 
 5. Open your browser and visit `http://localhost:3000` to view the website.
 
-## Contributing
-
-Contributions are welcome! If you'd like to contribute to the Bloom Agency website, please follow these steps:
-
-1. Fork this repository.
-2. Create a new branch with a descriptive name:
 
    ```bash
    git checkout -b your-branch-name
    ```
 
-3. Make your desired changes and improvements.
-4. Commit your changes with descriptive commit messages:
-
-   ```bash
-   git
+## Author
+   - Designed and Developed by [@cherish](https://github.com/cherish2003)
