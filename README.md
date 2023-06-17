@@ -9,9 +9,8 @@ This is the official repository for the Bloom Agency website, a stunning and int
 - Responsive layout that adapts to various screen sizes and devices
 - Interactive sections to engage and captivate visitors
 - Seamless navigation with intuitive user experience
-- Stunning portfolio showcasing the agency's best projects
 - Informative sections highlighting the agency's services and expertise
-- Contact form for visitors to get in touch with the agency
+
 
 ## Technologies Used
 
