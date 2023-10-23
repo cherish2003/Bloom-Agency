@@ -9,7 +9,7 @@ export const About = () => {
       </div>
       <div className="Sec_info">
         <RevealDiv>
-          We, an innovative agency dedicated to transforming your digital
+          We, are an innovative agency dedicated to transforming your digital
           presence. With a diverse range of services, including UI and UX
           development, Web & Mobile App Development, Illustration Design, Custom
           Wordpress, Digital Marketing & Management, and Branding Design (Logo &
